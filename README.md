@@ -15,6 +15,14 @@ If you don not want vim-pomodoro to use popup windows but text dialogs inside Vi
 `set guioptions+=c` to your `~/.gvimrc`. Please note that this will *globally* disable 
 popup notification windows in Vim.
 
+Screenshots
+-----------
+### Remaining Time 
+![Remaining Time](http://dl.dropbox.com/u/531773/vim-pomodoro/vim-pomodoro-remaining.png)
+
+### Pomodoro finished 
+![Pomodoro Finished](http://dl.dropbox.com/u/531773/vim-pomodoro/vim-pomodoro-finished.png)
+
 Configuration
 -------------
 Add the following options to your `~/.vimrc` to configure vim-pomodoro 
