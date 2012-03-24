@@ -17,11 +17,14 @@ popup notification windows in Vim.
 
 Screenshots
 -----------
-### Remaining Time 
+Remaining time displayed in statusline
 ![Remaining Time](http://dl.dropbox.com/u/531773/vim-pomodoro/vim-pomodoro-remaining.png)
 
-### Pomodoro finished 
+Pomodoro finished, let's take a break! 
 ![Pomodoro Finished](http://dl.dropbox.com/u/531773/vim-pomodoro/vim-pomodoro-finished.png)
+
+Take another turn? 
+![Pomodoro Restart](http://dl.dropbox.com/u/531773/vim-pomodoro/vim-pomodoro-break.png)
 
 Configuration
 -------------
