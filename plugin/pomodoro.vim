@@ -22,8 +22,6 @@ let g:pomodoro_started_at = -1
 
 let g:pomodoro_time_work = 25
 let g:pomodoro_time_slack = 5
-let g:pomodoro_log_file = "/tmp/pomodoro.log"
-let g:pomodoro_notification_cmd = "mpg123 -q ~/.vim/pomodoro.mp3"
 
 let s:save_cpo = &cpo
 set cpo&vim

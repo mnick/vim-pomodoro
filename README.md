@@ -74,4 +74,5 @@ Add
 	Bundle 'pydave/AsyncCommand'
 	Bundle 'mnick/vim-pomodoro'
 
-to your `~/.vimrc` and run `BundleInstall` afterwards.
+to your `~/.vimrc` and run `BundleInstall` afterwards. If you don't want to use Vundle, first install 
+AsyncCommand and simply extract the tarfile in your ~/.vim directory afterwards. 
