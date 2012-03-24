@@ -58,12 +58,12 @@ to your `~/.vimrc`
 Notifications outside vim can be enabled through the option `g:pomodoro_notification_cmd`. 
 For instance, to play a soundfile after each completed pomodoro or break, add something like 
 
-   let g:pomodoro_notification_cmd = "mpg123 -q ~/.vim/pomodoro-notification.mp3"
+	let g:pomodoro_notification_cmd = "mpg123 -q ~/.vim/pomodoro-notification.mp3"
 
 to your `~/.vimrc`. System-wide notifications can, for instance, be done via zenity and 
 the option
 
-   let g:pomodoro_notification_cmd = 'zenity --notification --text="Pomodoro finished"''
+	let g:pomodoro_notification_cmd = 'zenity --notification --text="Pomodoro finished"''
 
 Installation
 ------------
