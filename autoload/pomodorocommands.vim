@@ -5,7 +5,7 @@
 if exists("g:loaded_autoload_pomodorocommands") || &cp || !has('clientserver')
     " requires nocompatible and clientserver
     " also, don't double load
-    "finish
+    finish
 endif
 let g:loaded_autoload_pomodorocommands = 1
 

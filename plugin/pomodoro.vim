@@ -13,7 +13,7 @@
 " 	g:pomodoro_log_file 	- 	Path to log file
 
 if &cp || exists("g:pomodoro_loaded") && g:pomodoro_loaded
-  "finish
+  finish
 endif
 
 let g:pomodoro_loaded = 1
