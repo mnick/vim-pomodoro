@@ -14,7 +14,7 @@ function! pomodorohandlers#pause(name)
 		if g:pomodoro_do_log == 1 
 			exe "!echo 'Pomodoro " . self.name . " ended at " . strftime("%c") . ", duration: " . g:pomodoro_time_work . " minutes' >> " . g:pomodoro_log_file
 		endif
-		call asynccommand#run("sleep " . g:pomodoro_time_slack, pomodorohandlers#restart())
+		call asynccommand#run("sleep " . g:pomodoro_time_slack * 60, pomodorohandlers#restart())
     endfunction
     return asynccommand#tab_restore(env)
 endfunction

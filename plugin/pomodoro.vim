@@ -9,7 +9,7 @@ endif
 
 let g:pomodoro_loaded = 1
 let g:pomodoro_started = 0
-let g:pomodoro_time_work = 10 
+let g:pomodoro_time_work = 15
 let g:pomodoro_time_slack = 5
 let g:pomodoro_do_log = 1
 let g:pomodoro_log_file = "/tmp/pomodoro.log"
@@ -26,7 +26,7 @@ function! s:PomodoroStart(name)
 		else 
 			let name = a:name
 		endif
-		call asynccommand#run("sleep " . g:pomodoro_time_work, pomodorohandlers#pause(name))
+		call asynccommand#run("sleep " . g:pomodoro_time_work * 60, pomodorohandlers#pause(name))
 		let g:pomodoro_started = 1 
 	endif
 endfunction
