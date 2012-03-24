@@ -1,3 +1,7 @@
+" autoload/pomodorohandlers.vim
+" Author:   Maximilian Nickel <max@inmachina.com>
+" License:  MIT License
+
 if exists("g:loaded_autoload_pomodorohandlers") || &cp || !has('clientserver')
     " requires nocompatible and clientserver
     " also, don't double load

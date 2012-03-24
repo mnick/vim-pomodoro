@@ -8,7 +8,12 @@ Usage
 The usage of vim-pomodoro is simple. `:PomodoroStart [pomodoro_name]` starts a new pomodoro. 
 The parameter `pomodoro_name` is optional. After a pomodoro ended, a confirmation dialog will 
 remind you to take a break. When the break has ended, another dialog will ask you if you want 
-to start a new pomodoro. 
+to start a new pomodoro. Furthermore, the remaining time of a pomodoro can be display in the 
+statusline of vim.
+
+If you don not want vim-pomodoro to use popup windows but text dialogs inside Vim, add 
+`set guioptions+=c` to your `~/.gvimrc`. Please note that this will *globally* disable 
+popup notification windows in Vim.
 
 Configuration
 -------------
@@ -23,8 +28,14 @@ Add the following options to your `~/.vimrc` to configure vim-pomodoro
 	" Log completed pomodoros, 0 = False, 1 = True (default: 0)
 	let g:pomodoro_do_log = 0 
 
-	" Path of the pomodoro log file (default: /tmp/pomodoro.log)
+	" Path to the pomodoro log file (default: /tmp/pomodoro.log)
 	let g:pomodoro_log_file = "/tmp/pomodoro.log" 
+
+To display the remaining time of a pomodoro in your statusline, add 
+
+	set statusline=%#ErrorMsg#%{PomodoroStatus()}%#StatusLine# 
+
+to your `~/.vimrc` 
 
 Installation
 ------------
