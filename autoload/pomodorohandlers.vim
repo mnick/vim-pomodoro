@@ -13,13 +13,14 @@ function! pomodorohandlers#pause(name)
     " Load the result in a split
     let env = {'name' : a:name}
     function env.get(temp_file_name) dict
+		call pomodorocommands#notify()
  		let choice = confirm("Great, pomodoro " . self.name . " is finished!\nNow, take a break for " . g:pomodoro_time_slack . " minutes", "&OK")
 		let g:pomodoro_started = 0 
-		if g:pomodoro_do_log == 1 
+		if exists("g:pomodoro_log_file")
 			exe "!echo 'Pomodoro " . self.name . " ended at " . strftime("%c") . ", duration: " . g:pomodoro_time_work . " minutes' >> " . g:pomodoro_log_file
 		endif
 		call asynccommand#run("sleep " . g:pomodoro_time_slack * 60, pomodorohandlers#restart())
-    endfunction
+    endfunction 
     return asynccommand#tab_restore(env)
 endfunction
 
@@ -27,6 +28,7 @@ function! pomodorohandlers#restart()
     " Load the result in a split
     let env = {}
     function env.get(temp_file_name) dict
+		call pomodorocommands#notify()
  		let choice = confirm(g:pomodoro_time_slack . " minutes break is over... Feeling rested?\nWant to start another pomodoro?", "&Yes\n&No")
 		if choice == 1
 			call StartPomodoro()
