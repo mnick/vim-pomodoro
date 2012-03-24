@@ -1,7 +1,7 @@
 vim-pomodoro
 ============
 
-vim-pomodoro is a Vim plugin for the [Pomodoro time management technique](http://www.pomodorotechnique.com/).
+vim-pomodoro is a [Vim](http://www.vim.org) plugin for the [Pomodoro time management technique](http://www.pomodorotechnique.com/).
 
 Usage
 -----
@@ -14,8 +14,8 @@ Configuration
 -------------
 Add the following options to your `~/.vimrc` to configure vim-pomodoro 
 
-	" Duration of a pomodoro in minutes (default: 15)
-	let g:pomodoro_time_work = 15
+	" Duration of a pomodoro in minutes (default: 25)
+	let g:pomodoro_time_work = 25
 
 	" Duration of a break in minutes (default: 5)
 	let g:pomodoro_time_slack = 5 
@@ -28,9 +28,11 @@ Add the following options to your `~/.vimrc` to configure vim-pomodoro
 
 Installation
 ------------
-Recommended installation method is via [Vundle](https://github.com/gmarik/vundle). 
+vim-pomodoro requires [AsyncCommand](https://github.com/pydave/AsyncCommand) to be installed.
+The recommended installation method for both plugins is via [Vundle](https://github.com/gmarik/vundle). 
 Add 
 
-	Bundle "mnick/vim-pomodoro"
+	Bundle 'pydave/AsyncCommand'
+	Bundle 'mnick/vim-pomodoro'
 
 to your `~/.vimrc` and run `BundleInstall` afterwards.

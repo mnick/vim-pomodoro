@@ -9,7 +9,7 @@ endif
 
 let g:pomodoro_loaded = 1
 let g:pomodoro_started = 0
-let g:pomodoro_time_work = 15
+let g:pomodoro_time_work = 25
 let g:pomodoro_time_slack = 5
 let g:pomodoro_do_log = 0
 let g:pomodoro_log_file = "/tmp/pomodoro.log"
