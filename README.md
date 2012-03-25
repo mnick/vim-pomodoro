@@ -6,16 +6,16 @@ vim-pomodoro is a [Vim](http://www.vim.org) plugin for the [Pomodoro time manage
 Usage
 -----
 The usage of vim-pomodoro is simple. `:PomodoroStart [pomodoro_name]` starts a new pomodoro. 
-The parameter `pomodoro_name` is optional. After a pomodoro ended, a confirmation dialog will 
+The parameter `pomodoro_name` is optional. After a pomodoro has ended, a confirmation dialog will 
 remind you to take a break. When the break has ended, another dialog will ask you if you want 
-to start a new pomodoro. Furthermore, the remaining time of a pomodoro can be display in the 
+to start a new pomodoro. Furthermore, the remaining time of a pomodoro can be displayed in the 
 statusline of vim.
 
-If you don not want vim-pomodoro to use popup windows but text dialogs inside Vim, add 
+If you do not want vim-pomodoro to use popup windows but text dialogs inside Vim, add 
 `set guioptions+=c` to your `~/.gvimrc`. Please note that this will *globally* disable 
 popup notification windows in Vim.
 
-Also, in addition to the default notifications inside vim, vim-pomodoro allows to add 
+Also, in addition to the default notifications inside vim, vim-pomodoro allows you to add 
 further external notifications, such as sounds, system-notification popups etc.
 
 Screenshots
@@ -54,7 +54,7 @@ To display the remaining time of a pomodoro in your statusline, add
 
 to your `~/.vimrc` 
 
-### External Notifications 
+### Bells and Whistles
 Notifications outside vim can be enabled through the option `g:pomodoro_notification_cmd`. 
 For instance, to play a soundfile after each completed pomodoro or break, add something like 
 
@@ -75,4 +75,4 @@ Add
 	Bundle 'mnick/vim-pomodoro'
 
 to your `~/.vimrc` and run `BundleInstall` afterwards. If you don't want to use Vundle, first install 
-AsyncCommand and simply extract the tarfile in your ~/.vim directory afterwards. 
+AsyncCommand and simply extract the [tarfile](https://github.com/mnick/vim-pomodoro/tarball/master) in your ~/.vim directory afterwards. 
