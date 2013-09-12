@@ -15,7 +15,7 @@ function! pomodorohandlers#pause(name)
     function env.get(temp_file_name) dict
 		call pomodorocommands#notify()
  		let choice = confirm("Great, pomodoro " . self.name . " is finished!\nNow, take a break for " . g:pomodoro_time_slack . " minutes", "&OK")
-		let g:pomodoro_started = 0 
+		let g:pomodoro_started = 2
 		if exists("g:pomodoro_log_file")
 			exe "!echo 'Pomodoro " . self.name . " ended at " . strftime("%c") . ", duration: " . g:pomodoro_time_work . " minutes' >> " . g:pomodoro_log_file
 		endif
